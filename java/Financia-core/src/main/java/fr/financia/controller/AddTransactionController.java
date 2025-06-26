@@ -1,4 +1,4 @@
-package controller;
+package fr.financia.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
@@ -16,7 +16,7 @@ public class AddTransactionController {
     private TextField champDescription;
 
     @FXML
-    public void ajouterTransaction() {
+    public void addTransaction() {
         String montant = champMontant.getText();
         String date = champDate.getValue() != null ? champDate.getValue().toString() : "";
         String description = champDescription.getText();

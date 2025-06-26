@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.AddTransactionController"
+          hgap="10" vgap="10" padding="20">
+    <Label text="Montant:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+    <TextField fx:id="champMontant" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+    <Label text="Date:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+    <DatePicker fx:id="champDate" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+    <Label text="Description:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+    <TextField fx:id="champDescription" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+    <Button text="Ajouter" onAction="#addTransaction" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+</GridPane>
